@@ -1,0 +1,35 @@
+{
+    "name": "bechir/vite-bundle",
+    "description": "Integrate Vite.js into your Symfony application",
+    "type": "symfony-bundle",
+    "require": {
+        "php": ">=7.2.0",
+        "symfony/webpack-encore-bundle": "^1.12"
+    },
+    "require-dev": {
+        "symfony/phpunit-bridge": "^5.3",
+        "symfony/framework-bundle": "^4.4 || ^5.0",
+        "symfony/twig-bundle": "^4.4 || ^5.0"
+    },
+    "homepage": "https://github.com/bechir/vite-bundle",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Bechir Ba",
+            "homepage": "https://github.com/bechir"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Bechir\\ViteBundle\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Bechir\\ViteBundle\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": "./vendor/bin/simple-phpunit"
+    }
+}
